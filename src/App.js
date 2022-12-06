@@ -8,9 +8,11 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
   /* other styles */
+  a {
+    text-decoration: none;
+    color: black;
+  }
 `
-
-
 function App() {
   return (
    <BrowserRouter>
