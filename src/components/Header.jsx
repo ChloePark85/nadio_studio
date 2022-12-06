@@ -12,7 +12,7 @@ const Header = () => {
 export default Header;
 
 const Wrapper = styled.header`
-  width: 1512px;
+  width: 100%;
   height: 86px;
   top:0;
   position: fixed;
