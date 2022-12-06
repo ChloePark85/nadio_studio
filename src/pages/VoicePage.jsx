@@ -221,7 +221,18 @@ const DashbordRightSubmit = styled.div`
   bottom: 100px;
 `;
 
+
+const requsetUserVoiceFonts = async () => {
+  return [
+    {name: '박현아 폰트', img: '' },
+  ]
+}
+
 const VoicePage = () => {
+  const handlePlayClick = () => {
+    console.log("handlePlayClick");
+  };
+
   return (
     <Wrapper>
       <Header />
@@ -287,7 +298,7 @@ const VoicePage = () => {
         </DashbordRight>
       </DashbordContainer>
       <PlaybarContainer>
-        <PlayButton src={playSrc} />
+        <PlayButton onClick={handlePlayClick} src={playSrc} />
         <ProgressBar />
         <Timelaps>
           <span>00:00 &nbsp;</span>
